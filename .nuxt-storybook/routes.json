@@ -1,0 +1,8 @@
+[
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/olegkruchay/Sites/project--duden/duden-storybook-nuxt/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
