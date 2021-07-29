@@ -1,5 +1,5 @@
 const stories = ['../../components/**/*.stories.@(ts|js)']
-const addons  = ["@storybook\u002Faddon-essentials",{
+const addons  = ["@storybook\u002Faddon-essentials","@storybook\u002Faddon-knobs\u002Fregister",{
   name: '@storybook/addon-postcss',
   options: {
     postcssLoaderOptions: {
