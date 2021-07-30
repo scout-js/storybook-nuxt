@@ -90,5 +90,5 @@ sw.*
 *.swp
 
 # storybook
-.nuxt-storybook
-storybook-static
+.nuxt-storybook/
+storybook-static/
