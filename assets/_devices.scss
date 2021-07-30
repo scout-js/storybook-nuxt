@@ -1,0 +1,94 @@
+@mixin phone {
+  // 324
+  @media (max-width: 601px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  // 880?
+  @media (min-width: 602px) and (max-width: 1160px) {
+    @content;
+  }
+}
+
+@mixin phone-to-tablet {
+  @media (max-width: 1160px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  // 1440
+  @media (min-width: 1161px) and (max-width: 1680px) {
+    @content;
+  }
+}
+
+@mixin phone-to-laptop {
+  @media (max-width: 1680px) {
+    @content;
+  }
+}
+
+@mixin tablet-to-laptop {
+  @media (min-width: 602px) and (max-width: 1680px) {
+    @content;
+  }
+}
+
+@mixin tablet-to-imac {
+  @media (min-width: 602px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  // 1920
+  @media (min-width: 1680px) and (max-width: 2240px) {
+    @content;
+  }
+}
+
+@mixin tablet-to-desktop {
+  @media (min-width: 602px) and (max-width: 2240px) {
+    @content;
+  }
+}
+
+@mixin laptop-to-desktop {
+  @media (min-width: 1161px) and (max-width: 2240px) {
+    @content;
+  }
+}
+
+@mixin phone-to-desktop {
+  @media (max-width: 2240px) {
+    @content;
+  }
+}
+
+@mixin imac {
+  // 2560
+  @media (min-width: 2241px) {
+    @content;
+  }
+}
+
+@mixin tabled-to-imac {
+  @media (min-width: 602px) {
+    @content;
+  }
+}
+
+@mixin laptop-to-imac {
+  @media (min-width: 1161px) {
+    @content;
+  }
+}
+
+@mixin desktop-to-imac {
+  @media (min-width: 1680px) {
+    @content;
+  }
+}
