@@ -1,0 +1,18 @@
+{
+  "deklination": {
+    "sidebar": ["Kasus", "Nominativ", "Akkusativ", "Dativ", "Genitiv"],
+    "maskulin": ["Maskulin", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige"],
+    "femininum": ["femininum", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
+    "neutrum": ["neutrum", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
+    "plural": ["plural", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"]
+  },
+  "konjugation": {
+    "sidebar": ["Hidden title", "ich", "du", "er/sie/es", "wir", "ihr", "sie"],
+    "prasens": ["Prasens", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+    "prateritum": ["Präteritum", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+    "perfekt": ["Perfekt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt"],
+    "plusquamperfekt": ["Prasens", "hattest / warst⁽¹⁾ abgeknickt", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+    "futurI": ["Futur I", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+    "futurIi": ["Futur II", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "werden abgeknickt haben / sein⁽¹⁾"]
+  }
+}
