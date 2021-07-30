@@ -1,6 +1,5 @@
-import { withKnobs, text } from "@storybook/addon-knobs"
+import { withKnobs } from "@storybook/addon-knobs"
 import "assets/conjugation.scss"
-// import { action } from '@storybook/addon-actions'
 
 export default {
   title: 'Lexeme Subpage Tables',
