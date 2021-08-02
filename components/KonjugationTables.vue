@@ -6,14 +6,17 @@
         <Table :sidebar="konjugation.sidebar" :items="konjugation.prasens" />
         <Table :sidebar="konjugation.sidebar" :items="konjugation.prateritum" />
       </div>
+      <li class="accordion--item_hint"></li>
       <div class="accordion-tables_group">
         <Table :sidebar="konjugation.sidebar" :items="konjugation.perfekt" />
         <Table :sidebar="konjugation.sidebar" :items="konjugation.plusquamperfekt" />
       </div>
+      <li class="accordion--item_hint">{{ konjugation.hint }}</li>
       <div class="accordion-tables_group">
         <Table :sidebar="konjugation.sidebar" :items="konjugation.futurI" />
         <Table :sidebar="konjugation.sidebar" :items="konjugation.futurIi" />
       </div>
+      <li class="accordion--item_hint">{{ konjugation.hint }}</li>
     </div>
   </div>
 </template>
