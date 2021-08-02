@@ -19,11 +19,15 @@
   }
 }
 
-.accordion-tables {
+.accordion-wrapper {
+  margin: 10px 0 0;
+  padding: 0 0 10px;
+
   ul {
     margin: 0;
     padding: 0;
   }
+
   ul,
   li {
     list-style: none;
@@ -173,6 +177,11 @@
 }
 
 @include tablet {
+  .accordion-wrapper {
+    margin: 15px 0 0;
+    padding: 0 0 15px;
+  }
+
   .accordion-tables_group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -196,6 +205,10 @@
           }
         }
       }
+
+      &:last-child {
+        background-color: #8cea9b;
+      }
     }
   }
 }
@@ -207,12 +220,11 @@
   }
 
   .deklination {
-    .accordion-tables {
+    .accordion-groups,
+    .accordion-tables_group {
       display: grid;
       grid-template-columns: repeat(2, auto);
-    }
 
-    .accordion-tables_group {
       .accordion-table {
         border-right: 1px solid $ink-brightest;
       }
