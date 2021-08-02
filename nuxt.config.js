@@ -61,10 +61,5 @@ export default {
   build: {
   },
 
-  storybook: {
-    // Options
-    addons: [
-      '@storybook/addon-knobs/register'
-    ]
-  },
+  storybook: {},
 }
