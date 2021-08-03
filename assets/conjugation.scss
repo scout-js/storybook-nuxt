@@ -132,6 +132,46 @@
         }
       }
     }
+
+    &.imperativ {
+      .accordion-tables_group {
+        grid-template-columns: auto;
+      }
+
+      .accordion-table {
+        grid-template-columns: max-content minmax(max-content, auto);
+        border-right: none;
+      }
+
+      .accordion--list {
+        &.content-column {
+          .accordion--item {
+            &:first-child {
+              font-weight: 400;
+            }
+          }
+        }
+
+        .accordion--item {
+          font-weight: 400;
+
+          &:nth-child(odd) {
+            background-color: #fff;
+          }
+
+          &:nth-child(even) {
+            background-color: $silver;
+          }
+
+          &:first-child {
+            width: auto;
+            transform: none;
+            height: 40px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -185,9 +225,25 @@
     }
   }
 
+  .konjugation {
+    &.independent-groups {
+      &.imperativ {
+        .accordion--list {
+          &.content-column {
+            .accordion--item {
+              &:nth-child(2) {
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .konjugation,
   .deklination {
-    &.combined-group {
+    &.combined-groups {
       &.odd {
         .accordion-groups {
           .accordion-tables_group {
@@ -222,12 +278,20 @@
           border-right: 1px solid $ink-brightest;
         }
       }
+
+      &.imperativ {
+        .accordion-table {
+          &:first-child {
+            border-right: none;
+          }
+        }
+      }
     }
   }
 
   .konjugation,
   .deklination {
-    &.combined-group {
+    &.combined-groups {
       &.odd {
         .accordion-groups {
           display: grid;
@@ -235,10 +299,29 @@
 
           .accordion-tables_group {
             grid-template-columns: auto;
-            border-right: 1px solid #dadee0;
+
+            &:first-child {
+              margin-bottom: 0;
+
+              .accordion-table {
+                &:first-child {
+                  grid-template-columns: auto;
+                }
+              }
+            }
 
             &:last-child {
-              border-right: none;
+              .accordion-table {
+                &:first-child {
+                  grid-template-columns: auto;
+                  border-right: none;
+                }
+              }
+            }
+
+            .accordion-table {
+              grid-template-columns: auto;
+              border-right: 1px solid #dadee0;
             }
           }
         }
