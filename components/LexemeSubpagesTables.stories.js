@@ -1,9 +1,7 @@
-import { withKnobs } from "@storybook/addon-knobs"
-import "assets/conjugation.scss"
+import 'assets/conjugation.scss'
 
 export default {
   title: 'Lexeme Subpage Tables',
-  decorators: [withKnobs]
 }
 
 export const TableConjugation = () => ({

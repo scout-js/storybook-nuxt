@@ -61,5 +61,9 @@ export default {
   build: {
   },
 
-  storybook: {},
+  storybook: {
+    addons: [
+      '@whitespace/storybook-addon-html',
+    ]
+  },
 }
