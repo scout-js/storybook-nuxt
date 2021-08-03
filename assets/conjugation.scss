@@ -228,6 +228,16 @@
   .konjugation {
     &.independent-groups {
       &.imperativ {
+        .accordion-tables_group {
+          &:first-child {
+            .accordion-table {
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+
         .accordion--list {
           &.content-column {
             .accordion--item {
