@@ -1,13 +1,19 @@
 {
   "deklination": {
+    "title": "Deklination",
+    "noun": {
+      "title": "Deklination Noun"
+    },
     "hint": "⁽¹⁾ Perfektbildung mit \"hat\", andere mit \"ist\"",
     "sidebar": ["Kasus", "Nominativ", "Akkusativ", "Dativ", "Genitiv"],
     "maskulin": ["Maskulin", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige"],
     "femininum": ["femininum", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
     "neutrum": ["neutrum", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
+    "singular": ["singular", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
     "plural": ["plural", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"]
   },
   "konjugation": {
+    "title": "Konjugation",
     "hint": "⁽¹⁾ Perfektbildung mit \"hat\", andere mit \"ist\"",
     "sidebar": ["Hidden title", "ich", "du", "er/sie/es", "wir", "ihr", "sie"],
     "prasens": ["Prasens", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
