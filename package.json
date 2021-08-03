@@ -1,6 +1,6 @@
 {
-  "name": "duden-storybook-nuxt",
-  "version": "0.2.0",
+  "name": "storybook-nuxt",
+  "version": "0.2.2",
   "private": true,
   "scripts": {
     "dev": "nuxt",

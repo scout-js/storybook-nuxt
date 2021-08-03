@@ -6,10 +6,22 @@ export default {
   decorators: [withKnobs]
 }
 
+export const TableConjugation = () => ({
+  template:  '<KonjugationTables />',
+})
+
 export const TableDeklination = () => ({
   template:  '<DeklinationTables />',
 })
 
-export const TableConjugation = () => ({
-  template:  '<KonjugationTables />',
+export const TableKonjugationImperativ = () => ({
+  template:  '<KonjugationImperativTables />',
+})
+
+export const TableDeklinationNoun = () => ({
+  template:  '<DeklinationNounTables />',
+})
+
+export const TableInfiniteSteigerungsformen = () => ({
+  template:  '<InfiniteSteigerungsformenTables />',
 })

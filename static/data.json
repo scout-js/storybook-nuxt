@@ -1,13 +1,31 @@
 {
+  "infinite": {
+    "title": "Deklination: Steigerungsformen / Konjugation: Infinite Formen",
+    "infinitiv": ["Infinitiv mit zu", "abzuknicken"],
+    "partizipI": ["Partizip I", "abknickend"],
+    "partizipIi": ["Partizip II", "abgeknickt"],
+    "hint": "⁽2⁾ Perfektbildung mit \"hat\", andere mit \"ist\""
+  },
   "deklination": {
+    "title": "Deklination",
+    "noun": {
+      "title": "Deklination: Noun"
+    },
     "hint": "⁽¹⁾ Perfektbildung mit \"hat\", andere mit \"ist\"",
     "sidebar": ["Kasus", "Nominativ", "Akkusativ", "Dativ", "Genitiv"],
     "maskulin": ["Maskulin", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige"],
     "femininum": ["femininum", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
     "neutrum": ["neutrum", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
+    "singular": ["singular", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
     "plural": ["plural", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"]
   },
   "konjugation": {
+    "imperativ": {
+      "title": "Konjugation: Imperativ",
+      "sidebar": ["2. Person Singular [du]", "2. Person Plural [ihr]  "],
+      "content": ["knick ab!; knicke ab!", "knickt ab!"]
+    },
+    "title": "Konjugation",
     "hint": "⁽¹⁾ Perfektbildung mit \"hat\", andere mit \"ist\"",
     "sidebar": ["Hidden title", "ich", "du", "er/sie/es", "wir", "ihr", "sie"],
     "prasens": ["Prasens", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
