@@ -1,8 +1,15 @@
 {
+  "infinite": {
+    "title": "Deklination: Steigerungsformen / Konjugation: Infinite Formen",
+    "infinitiv": ["Infinitiv mit zu", "abzuknicken"],
+    "partizipI": ["Partizip I", "abknickend"],
+    "partizipIi": ["Partizip II", "abgeknickt"],
+    "hint": "⁽2⁾ Perfektbildung mit \"hat\", andere mit \"ist\""
+  },
   "deklination": {
     "title": "Deklination",
     "noun": {
-      "title": "Deklination Noun"
+      "title": "Deklination: Noun"
     },
     "hint": "⁽¹⁾ Perfektbildung mit \"hat\", andere mit \"ist\"",
     "sidebar": ["Kasus", "Nominativ", "Akkusativ", "Dativ", "Genitiv"],
