@@ -10,6 +10,10 @@ export const TableDeklination = () => ({
   template:  '<DeklinationTables />',
 })
 
+export const TableDeklinationNoun = () => ({
+  template:  '<DeklinationNounTables />',
+})
+
 export const TableConjugation = () => ({
   template:  '<KonjugationTables />',
 })
