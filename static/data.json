@@ -20,6 +20,11 @@
     "plural": ["plural", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"]
   },
   "konjugation": {
+    "imperativ": {
+      "title": "Konjugation: Imperativ",
+      "sidebar": ["2. Person Singular [du]", "2. Person Plural [ihr]  "],
+      "content": ["knick ab!; knicke ab!", "knickt ab!"]
+    },
     "title": "Konjugation",
     "hint": "⁽¹⁾ Perfektbildung mit \"hat\", andere mit \"ist\"",
     "sidebar": ["Hidden title", "ich", "du", "er/sie/es", "wir", "ihr", "sie"],
