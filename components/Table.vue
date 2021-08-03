@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import Sidebar from '~/component/Sidebar'
-  import ContentPart from '~/component/ContentPart'
+  import Sidebar from '~/components/Sidebar'
+  import ContentPart from '~/components/ContentPart'
 
   export default {
     name: 'Table',

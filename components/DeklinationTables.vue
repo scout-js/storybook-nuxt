@@ -19,7 +19,7 @@
 
 <script>
   import { deklination } from '~/static/data.json'
-  import Table from '~/component/Table'
+  import Table from '~/components/Table'
 
   export default {
     name: 'DeklinationTables',
