@@ -1,6 +1,6 @@
 {
   "name": "storybook-nuxt",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -30,6 +30,7 @@
     "@storybook/addon-docs": "^6.3.5",
     "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-viewport": "^6.3.5",
+    "@whitespace/storybook-addon-html": "^5.0.0",
     "css-loader": "^4",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
