@@ -1,15 +1,17 @@
 <template>
   <div class="accordion-table">
     <Sidebar :sidebar="sidebar" />
-    <ul class="accordion--list content-column">
-      <li v-for="(item, key) in items" :key="key" class="accordion--item">{{ item }}</li>
-    </ul>
+    <ContentPart :items="items" />
   </div>
 </template>
 
 <script>
+  import Sidebar from '~/component/Sidebar'
+  import ContentPart from '~/component/ContentPart'
+
   export default {
     name: 'Table',
+    components: { Sidebar, ContentPart },
     props: {
       sidebar: {
         type: Array,
