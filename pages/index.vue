@@ -1,8 +1,9 @@
 <template>
   <div>
+    <InfiniteSteigerungsformenTables />
+    <KonjugationImperativTables />
     <DeklinationTables />
     <DeklinationNounTables />
-    <InfiniteSteigerungsformenTables />
     <KonjugationTables />
   </div>
 </template>
@@ -12,9 +13,10 @@
   import DeklinationNounTables from '~/components/DeklinationNounTables'
   import InfiniteSteigerungsformenTables from '~/components/InfiniteSteigerungsformenTables'
   import KonjugationTables from '~/components/KonjugationTables'
+  import KonjugationImperativTables from '~/components/KonjugationImperativTables'
 
   export default {
-    components: { InfiniteSteigerungsformenTables, DeklinationTables, DeklinationNounTables, KonjugationTables }
+    components: { KonjugationImperativTables, InfiniteSteigerungsformenTables, DeklinationTables, DeklinationNounTables, KonjugationTables }
   }
 </script>
 

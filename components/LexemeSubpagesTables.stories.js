@@ -14,6 +14,10 @@ export const TableDeklination = () => ({
   template:  '<DeklinationTables />',
 })
 
+export const TableKonjugationImperativ = () => ({
+  template:  '<KonjugationImperativTables />',
+})
+
 export const TableDeklinationNoun = () => ({
   template:  '<DeklinationNounTables />',
 })

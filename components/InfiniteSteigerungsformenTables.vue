@@ -1,5 +1,5 @@
 <template>
-  <div class="accordion-wrapper deklination combined-group odd">
+  <div class="accordion-wrapper deklination combined-groups odd">
     <h3 class="accordion-tables_header">{{ infinite.title }}</h3>
     <div class="accordion-groups">
       <div class="accordion-tables_group">
