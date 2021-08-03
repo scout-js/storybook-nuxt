@@ -114,20 +114,21 @@
   justify-content: center;
 }
 
-// .conjugation
-.independent-groups {
-  .accordion-table {
-    display: grid;
-    grid-template-columns: 100px auto;
-  }
+.konjugation {
+  &.independent-groups {
+    .accordion-table {
+      display: grid;
+      grid-template-columns: 100px auto;
+    }
 
-  .accordion--list {
-    &.content-column {
-      .accordion--item {
-        &:first-child {
-          z-index: 2;
-          width: calc(100% + 100px);
-          transform: translateX(-100px);
+    .accordion--list {
+      &.content-column {
+        .accordion--item {
+          &:first-child {
+            z-index: 2;
+            width: calc(100% + 100px);
+            transform: translateX(-100px);
+          }
         }
       }
     }
@@ -170,13 +171,35 @@
     }
   }
 
-  // deklination
-  .combined-groups {
-    .accordion-tables_group {
-      &:first-child {
-        .accordion-table {
-          &:last-child {
-            margin-bottom: 40px;
+  .deklination {
+    &.combined-groups {
+      .accordion-tables_group {
+        &:first-child {
+          .accordion-table {
+            &:last-child {
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .konjugation,
+  .deklination {
+    &.combined-group {
+      &.odd {
+        .accordion-groups {
+          .accordion-tables_group {
+            &:last-child {
+              .accordion-table {
+                margin-bottom: 0;
+              }
+            }
+
+            .accordion-table {
+              grid-template-columns: auto;
+            }
           }
         }
       }
@@ -190,13 +213,35 @@
     padding: 0 0 15px;
   }
 
-  // .conjugation
-  .independent-groups {
-    .accordion-table {
-      grid-template-columns: 100px minmax(max-content, auto);
+  .konjugation {
+    &.independent-groups {
+      .accordion-table {
+        grid-template-columns: 100px minmax(max-content, auto);
 
-      &:first-child {
-        border-right: 1px solid $ink-brightest;
+        &:first-child {
+          border-right: 1px solid $ink-brightest;
+        }
+      }
+    }
+  }
+
+  .konjugation,
+  .deklination {
+    &.combined-group {
+      &.odd {
+        .accordion-groups {
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+
+          .accordion-tables_group {
+            grid-template-columns: auto;
+            border-right: 1px solid #dadee0;
+
+            &:last-child {
+              border-right: none;
+            }
+          }
+        }
       }
     }
   }
@@ -208,30 +253,31 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  // deklination
-  .combined-groups {
-    .accordion-tables_group {
-      &:first-child {
-        margin-bottom: 40px;
+  .deklination {
+    &.combined-groups {
+      .accordion-tables_group {
+        &:first-child {
+          margin-bottom: 40px;
+        }
       }
     }
-  }
 
-  .single-group,
-  .combined-groups {
-    .accordion-tables_group {
-      &:first-child,
-      &:last-child {
-        .accordion-table {
-          &:first-child {
-            display: grid;
-            grid-template-columns: 100px 1fr;
-            border-right: 1px solid $ink-brightest;
-          }
+    &.single-group,
+    &.combined-groups {
+      .accordion-tables_group {
+        &:first-child,
+        &:last-child {
+          .accordion-table {
+            &:first-child {
+              display: grid;
+              grid-template-columns: 100px 1fr;
+              border-right: 1px solid $ink-brightest;
+            }
 
-          &:last-child {
-            .sidebar-column {
-              display: none;
+            &:last-child {
+              .sidebar-column {
+                display: none;
+              }
             }
           }
         }
@@ -246,19 +292,60 @@
     grid-template-columns: repeat(2, auto);
   }
 
-  .combined-groups {
-    .accordion-groups {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-
-      .accordion-tables_group {
+  .deklination {
+    &.combined-groups {
+      .accordion-groups {
         display: grid;
         grid-template-columns: repeat(2, auto);
 
+        .accordion-tables_group {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+
+          &:last-child {
+            .accordion-table {
+              .sidebar-column {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.single-group {
+      .accordion-tables_group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &.single-group,
+    &.combined-groups {
+      .accordion-tables_group {
+        .accordion-table {
+          border-right: 1px solid $ink-brightest;
+        }
+
+        &:first-child {
+          .accordion-table {
+            &:first-child {
+              display: grid;
+              grid-template-columns: 100px 1fr;
+            }
+
+            &:last-child {
+              .sidebar-column {
+                display: none;
+              }
+            }
+          }
+        }
+
         &:last-child {
           .accordion-table {
-            .sidebar-column {
-              display: none;
+            &:last-child {
+              border-right: none;
             }
           }
         }
@@ -266,51 +353,12 @@
     }
   }
 
-  // deklination noun
-  .single-group {
-    .accordion-tables_group {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  .single-group,
-  .combined-groups {
-    .accordion-tables_group {
-      .accordion-table {
-        border-right: 1px solid $ink-brightest;
+  .konjugation {
+    &.independent-groups {
+      .accordion-tables_group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
       }
-
-      &:first-child {
-        .accordion-table {
-          &:first-child {
-            display: grid;
-            grid-template-columns: 100px 1fr;
-          }
-
-          &:last-child {
-            .sidebar-column {
-              display: none;
-            }
-          }
-        }
-      }
-
-      &:last-child {
-        .accordion-table {
-          &:last-child {
-            border-right: none;
-          }
-        }
-      }
-    }
-  }
-
-  .independent-groups,
-  .conjugation {
-    .accordion-tables_group {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
