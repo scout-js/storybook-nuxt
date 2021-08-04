@@ -21,5 +21,5 @@
 </script>
 
 <style lang="scss">
-  @import "../assets/conjugation";
+  @import "../static/assets/conjugation";
 </style>

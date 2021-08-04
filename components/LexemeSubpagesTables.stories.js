@@ -1,4 +1,4 @@
-import 'assets/conjugation.scss'
+import 'static/assets/conjugation.scss'
 
 export default {
   title: 'Lexeme Subpage Tables',
