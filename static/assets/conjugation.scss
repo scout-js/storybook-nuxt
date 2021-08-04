@@ -47,6 +47,7 @@
 .accordion-tables_header {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
   min-height: 60px;
   margin-top: 0;
   margin-bottom: -3px;
@@ -57,7 +58,6 @@
   font-size: 26px;
   font-weight: bold;
   line-height: 26px;
-  box-sizing: border-box;
 }
 
 .accordion--list {
@@ -101,17 +101,17 @@
 }
 
 .accordion--item_hint {
-  font-size: 14px;
-  line-height: 40px;
   letter-spacing: 0.22px;
   color: $ink;
+  font-size: 14px;
+  line-height: 40px;
 }
 
 .accordion-hints_group {
-  min-height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 40px;
 }
 
 .konjugation {
@@ -165,8 +165,8 @@
 
           &:first-child {
             width: auto;
-            transform: none;
             height: 40px;
+            transform: none;
             font-size: 15px;
           }
         }
