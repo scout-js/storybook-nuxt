@@ -1,25 +1,31 @@
 <template>
   <div>
-    <InfiniteSteigerungsformenTables />
-    <KonjugationImperativTables />
-    <DeklinationTables />
-    <DeklinationNounTables />
-    <KonjugationTables />
+    <InfiniteSteigerungsformenTables/>
+    <ConjugationImperativTables/>
+    <DeclinationTables/>
+    <DeclinationNounTables/>
+    <ConjugationTables/>
   </div>
 </template>
 
 <script>
-  import DeklinationTables from '~/components/DeklinationTables'
-  import DeklinationNounTables from '~/components/DeklinationNounTables'
-  import InfiniteSteigerungsformenTables from '~/components/InfiniteSteigerungsformenTables'
-  import KonjugationTables from '~/components/KonjugationTables'
-  import KonjugationImperativTables from '~/components/KonjugationImperativTables'
+import DeclinationTables from '~/components/DeclinationTables'
+import DeclinationNounTables from '~/components/DeclinationNounTables'
+import InfiniteSteigerungsformenTables from '~/components/InfiniteSteigerungsformenTables'
+import ConjugationTables from '~/components/ConjugationTables'
+import ConjugationImperativTables from '~/components/ConjugationImperativTables'
 
-  export default {
-    components: { KonjugationImperativTables, InfiniteSteigerungsformenTables, DeklinationTables, DeklinationNounTables, KonjugationTables }
+export default {
+  components: {
+    DeclinationTables,
+    DeclinationNounTables,
+    InfiniteSteigerungsformenTables,
+    ConjugationTables,
+    ConjugationImperativTables
   }
+}
 </script>
 
 <style lang="scss">
-  @import "../static/assets/styles";
+@import "../static/assets/styles";
 </style>
