@@ -5,19 +5,19 @@ export default {
 }
 
 export const TableConjugation = () => ({
-  template:  '<KonjugationTables />',
+  template:  '<ConjugationTables />',
 })
 
-export const TableDeklination = () => ({
-  template:  '<DeklinationTables />',
+export const TableDeclination = () => ({
+  template:  '<DeclinationTables />',
 })
 
-export const TableKonjugationImperativ = () => ({
-  template:  '<KonjugationImperativTables />',
+export const TableConjugationImperativ = () => ({
+  template:  '<ConjugationImperativTables />',
 })
 
-export const TableDeklinationNoun = () => ({
-  template:  '<DeklinationNounTables />',
+export const TableDeclinationNoun = () => ({
+  template:  '<DeclinationNounTables />',
 })
 
 export const TableInfiniteSteigerungsformen = () => ({
