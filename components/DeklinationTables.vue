@@ -1,24 +1,24 @@
 <template>
-  <div class="accordion-wrapper deklination combined-groups">
-    <h3 class="accordion-tables_header">{{ deklination.title }}</h3>
+  <div class="con-dec__wrapper declination combined-groups">
+    <h3 class="accordion-tables__header">{{ declination.title }}</h3>
     <div class="accordion-groups">
-      <div class="accordion-tables_group">
-        <Table :sidebar="deklination.sidebar" :items="deklination.maskulin" />
-        <Table :sidebar="deklination.sidebar" :items="deklination.femininum" />
+      <div class="accordion-tables__group">
+        <Table :sidebar="declination.sidebar" :items="declination.maskulin" />
+        <Table :sidebar="declination.sidebar" :items="declination.femininum" />
       </div>
-      <div class="accordion-tables_group">
-        <Table :sidebar="deklination.sidebar" :items="deklination.neutrum" />
-        <Table :sidebar="deklination.sidebar" :items="deklination.plural" />
+      <div class="accordion-tables__group">
+        <Table :sidebar="declination.sidebar" :items="declination.neutrum" />
+        <Table :sidebar="declination.sidebar" :items="declination.plural" />
       </div>
     </div>
-    <div class="accordion-hints_group">
-      <div class="accordion--item_hint">{{ deklination.hint }}</div>
+    <div class="accordion-hints__group">
+      <div class="accordion__item__hint">{{ declination.hint }}</div>
     </div>
   </div>
 </template>
 
 <script>
-  import { deklination } from '~/static/data.json'
+  import { declination } from '~/static/data.json'
   import Table from '~/components/Table'
 
   export default {
@@ -26,7 +26,7 @@
     components: { Table },
     data() {
       return {
-        deklination,
+        declination,
       }
     },
   }

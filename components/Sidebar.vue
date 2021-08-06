@@ -1,6 +1,6 @@
 <template>
-  <ul class="accordion--list sidebar-column dashed">
-    <li v-for="(item, id) in sidebar" :key="id" class="accordion--item">{{ item }}</li>
+  <ul class="accordion__list sidebar-column dashed">
+    <li v-for="(item, id) in sidebar" :key="id" class="accordion__item">{{ item }}</li>
   </ul>
 </template>
 

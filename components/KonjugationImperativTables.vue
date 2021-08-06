@@ -1,13 +1,13 @@
 <template>
-  <div class="accordion-wrapper konjugation independent-groups imperativ">
-    <h3 class="accordion-tables_header">{{ konjugation.imperativ.title }}</h3>
+  <div class="con-dec__wrapper conjugation independent-groups imperativ">
+    <h3 class="accordion-tables__header">{{ conjugation.imperativ.title }}</h3>
     <div class="accordion-groups">
       <div class="accordion-group">
-        <div class="accordion-tables_group">
-          <Table :sidebar="konjugation.imperativ.sidebar" :items="konjugation.imperativ.content" />
+        <div class="accordion-tables__group">
+          <Table :sidebar="conjugation.imperativ.sidebar" :items="conjugation.imperativ.content" />
         </div>
-        <div class="accordion-hints_group">
-          <div class="accordion--item_hint">{{ konjugation.hint }}</div>
+        <div class="accordion-hints__group">
+          <div class="accordion__item__hint">{{ conjugation.hint }}</div>
         </div>
       </div>
     </div>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import { konjugation } from '~/static/data.json'
+  import { conjugation } from '~/static/data.json'
   import Table from '~/components/Table'
 
   export default {
@@ -23,7 +23,7 @@
     components: { Table },
     data() {
       return {
-        konjugation,
+        conjugation,
       }
     },
   }
