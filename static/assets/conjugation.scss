@@ -1,8 +1,7 @@
 .ui-accordion {
-  .accordion-wrapper,
-  .accordion--wrapper {
+  .con-dec__wrapper {
     .ui-accordion-header {
-      &.accordion-tables_header {
+      &.accordion-tables__header {
         display: flex;
         box-sizing: border-box;
         margin-bottom: -3px;
@@ -16,7 +15,7 @@
   }
 }
 
-.accordion-wrapper {
+.con-dec__wrapper {
   margin: 10px 0 0;
   padding: 0 0 10px;
 
@@ -31,7 +30,7 @@
   }
 }
 
-.accordion-tables_group {
+.accordion-tables__group {
   position: relative;
   overflow: hidden;
 }
@@ -41,7 +40,7 @@
   border-top: 3px solid $corp;
 }
 
-.accordion-tables_header {
+.accordion-tables__header {
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -57,7 +56,7 @@
   line-height: 26px;
 }
 
-.accordion--list {
+.accordion__list {
   &.sidebar-column {
     border-right: 1px solid $ink-brightest;
     font-weight: bold;
@@ -68,7 +67,7 @@
   }
 }
 
-.accordion--item {
+.accordion__item {
   box-sizing: border-box;
   height: 40px;
   padding: 0 15px;
@@ -97,30 +96,30 @@
   }
 }
 
-.accordion--item_hint {
+.accordion__item__hint {
   letter-spacing: 0.22px;
   color: $ink;
   font-size: 14px;
   line-height: 40px;
 }
 
-.accordion-hints_group {
+.accordion-hints__group {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 40px;
 }
 
-.konjugation {
+.conjugation {
   &.independent-groups {
     .accordion-table {
       display: grid;
       grid-template-columns: 100px auto;
     }
 
-    .accordion--list {
+    .accordion__list {
       &.content-column {
-        .accordion--item {
+        .accordion__item {
           &:first-child {
             z-index: 2;
             width: calc(100% + 100px);
@@ -131,7 +130,7 @@
     }
 
     &.imperativ {
-      .accordion-tables_group {
+      .accordion-tables__group {
         grid-template-columns: auto;
       }
 
@@ -140,16 +139,16 @@
         border-right: none;
       }
 
-      .accordion--list {
+      .accordion__list {
         &.content-column {
-          .accordion--item {
+          .accordion__item {
             &:first-child {
               font-weight: 400;
             }
           }
         }
 
-        .accordion--item {
+        .accordion__item {
           font-weight: 400;
 
           &:nth-child(odd) {
@@ -178,7 +177,7 @@
     grid-template-columns: 100px minmax(max-content, auto);
   }
 
-  .accordion-tables_group {
+  .accordion-tables__group {
     .accordion-table {
       &:first-child {
         margin-bottom: 40px;
@@ -186,9 +185,9 @@
     }
   }
 
-  .accordion--list {
+  .accordion__list {
     &.content-column {
-      .accordion--item {
+      .accordion__item {
         &:first-child {
           position: absolute;
           width: 100%;
@@ -208,9 +207,9 @@
     }
   }
 
-  .deklination {
+  .declination {
     &.combined-groups {
-      .accordion-tables_group {
+      .accordion-tables__group {
         &:first-child {
           .accordion-table {
             &:last-child {
@@ -222,10 +221,10 @@
     }
   }
 
-  .konjugation {
+  .conjugation {
     &.independent-groups {
       &.imperativ {
-        .accordion-tables_group {
+        .accordion-tables__group {
           &:first-child {
             .accordion-table {
               &:last-child {
@@ -235,9 +234,9 @@
           }
         }
 
-        .accordion--list {
+        .accordion__list {
           &.content-column {
-            .accordion--item {
+            .accordion__item {
               &:nth-child(2) {
                 margin-top: 40px;
               }
@@ -248,12 +247,12 @@
     }
   }
 
-  .konjugation,
-  .deklination {
+  .conjugation,
+  .declination {
     &.combined-groups {
       &.odd {
         .accordion-groups {
-          .accordion-tables_group {
+          .accordion-tables__group {
             &:last-child {
               .accordion-table {
                 margin-bottom: 0;
@@ -271,12 +270,12 @@
 }
 
 @include tablet-to-imac {
-  .accordion-wrapper {
+  .con-dec__wrapper {
     margin: 15px 0 0;
     padding: 0 0 15px;
   }
 
-  .konjugation {
+  .conjugation {
     &.independent-groups {
       .accordion-table {
         grid-template-columns: 100px minmax(max-content, auto);
@@ -296,15 +295,15 @@
     }
   }
 
-  .konjugation,
-  .deklination {
+  .conjugation,
+  .declination {
     &.combined-groups {
       &.odd {
         .accordion-groups {
           display: grid;
           grid-template-columns: repeat(3, auto);
 
-          .accordion-tables_group {
+          .accordion-tables__group {
             grid-template-columns: auto;
 
             &:first-child {
@@ -338,14 +337,14 @@
 }
 
 @include tablet {
-  .accordion-tables_group {
+  .accordion-tables__group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .deklination {
+  .declination {
     &.combined-groups {
-      .accordion-tables_group {
+      .accordion-tables__group {
         &:first-child {
           margin-bottom: 40px;
         }
@@ -354,7 +353,7 @@
 
     &.single-group,
     &.combined-groups {
-      .accordion-tables_group {
+      .accordion-tables__group {
         &:first-child,
         &:last-child {
           .accordion-table {
@@ -377,18 +376,18 @@
 }
 
 @include laptop-to-imac {
-  .accordion-tables_group {
+  .accordion-tables__group {
     display: grid;
     grid-template-columns: repeat(2, auto);
   }
 
-  .deklination {
+  .declination {
     &.combined-groups {
       .accordion-groups {
         display: grid;
         grid-template-columns: repeat(2, auto);
 
-        .accordion-tables_group {
+        .accordion-tables__group {
           display: grid;
           grid-template-columns: repeat(2, auto);
 
@@ -404,7 +403,7 @@
     }
 
     &.single-group {
-      .accordion-tables_group {
+      .accordion-tables__group {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
@@ -412,7 +411,7 @@
 
     &.single-group,
     &.combined-groups {
-      .accordion-tables_group {
+      .accordion-tables__group {
         .accordion-table {
           border-right: 1px solid $ink-brightest;
         }
@@ -443,9 +442,9 @@
     }
   }
 
-  .konjugation {
+  .conjugation {
     &.independent-groups {
-      .accordion-tables_group {
+      .accordion-tables__group {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
