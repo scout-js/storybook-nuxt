@@ -6,7 +6,7 @@
     "partizipIi": ["Partizip II", "abgeknickt"],
     "hint": "⁽2⁾ Perfektbildung mit \"hat\", andere mit \"ist\""
   },
-  "deklination": {
+  "declination": {
     "title": "Deklination",
     "noun": {
       "title": "Deklination: Noun"
@@ -19,7 +19,7 @@
     "singular": ["singular", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
     "plural": ["plural", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"]
   },
-  "konjugation": {
+  "conjugation": {
     "imperativ": {
       "title": "Konjugation: Imperativ",
       "sidebar": ["2. Person Singular [du]", "2. Person Plural [ihr]  "],
