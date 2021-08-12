@@ -7,6 +7,7 @@
     <meta name="lemma" content="conjugation_test_2"/>
     <meta name="uri" content="conjugation_test_2"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.duden.de/ampersand/base/elements.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.duden.de/ampersand/base/duden-elements.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.duden.de/ampersand/base/sans.min.css"/>
@@ -30,28 +31,11 @@
     <!--  Adding the styles for tables  -->
     <link rel="stylesheet" type="text/css" href="https://storybook-nuxt.netlify.app/css/condec.min.css"/>
     <style>
-        figure.depiction::before {
-            content: "\1F5BC";
-            font-size: 250%;
-            margin-left: 1em;
-            margin-right: 2em;
-        }
-        a { color: green;}
-        u.long-stress { text-decoration: underline; }
-        body {grid-template-columns: repeat(11,1fr);
-            display: grid;
-        }
-        section[data-block-type="searchtitle"]::before {
-            content: "(Nur für Suche:)";
-            font-size: 75%;
-        }
-        section[data-block-type="searchtitle"] {
-            color: silver;
-        }
-        section {
-            grid-column-start: 3;
-            grid-column-end: 10;
-         }
+      body {
+        margin: 0 auto;
+        max-width: 1160px;
+        padding: 0 15px;
+      }
     </style>
   </head>
   <body class="sheet">
