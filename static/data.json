@@ -7,12 +7,12 @@
     "hint": "⁽2⁾ Perfektbildung mit \"hat\", andere mit \"ist\""
   },
   "declination": {
+    "sidebar": ["Kasus", "Nominativ", "Akkusativ", "Dativ", "Genitiv"],
     "title": "Deklination",
     "noun": {
       "title": "Deklination: Noun"
     },
     "hint": "⁽¹⁾ Perfektbildung mit \"hat\", andere mit \"ist\"",
-    "sidebar": ["Kasus", "Nominativ", "Akkusativ", "Dativ", "Genitiv"],
     "maskulin": ["Maskulin", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige", "keine gleichschenklige keine gleichschenklige"],
     "femininum": ["femininum", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
     "neutrum": ["neutrum", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"],
@@ -20,6 +20,7 @@
     "plural": ["plural", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige", "keine gleichschenklige"]
   },
   "conjugation": {
+    "sidebar": ["Hidden title", "ich", "du", "er/sie/es", "wir", "ihr", "sie"],
     "imperativ": {
       "title": "Konjugation: Imperativ",
       "sidebar": ["2. Person Singular [du]", "2. Person Plural [ihr]  "],
@@ -27,12 +28,50 @@
     },
     "title": "Konjugation",
     "hint": "⁽¹⁾ Perfektbildung mit \"hat\", andere mit \"ist\"",
-    "sidebar": ["Hidden title", "ich", "du", "er/sie/es", "wir", "ihr", "sie"],
     "prasens": ["Prasens", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
     "prateritum": ["Präteritum", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
     "perfekt": ["Perfekt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt"],
     "plusquamperfekt": ["Prasens", "hattest / warst⁽¹⁾ abgeknickt", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
     "futurI": ["Futur I", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
-    "futurIi": ["Futur II", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "werden abgeknickt haben / sein⁽¹⁾"]
+    "futurIi": ["Futur II", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "werden abgeknickt haben / sein⁽¹⁾"],
+    "test": {
+      "indicativ": {
+        "prasens": ["Prasens", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "prateritum": ["Präteritum", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "perfekt": ["Perfekt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt"],
+        "plusquamperfekt": ["Prasens", "hattest / warst⁽¹⁾ abgeknickt", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "futurI": ["Futur I", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "futurIi": ["Futur II", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "werden abgeknickt haben / sein⁽¹⁾"]
+      },
+      "konjunktivI": {
+        "prasens": ["Prasens", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "prateritum": ["Präteritum", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "perfekt": ["Perfekt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt"],
+        "plusquamperfekt": ["Prasens", "hattest / warst⁽¹⁾ abgeknickt", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "futurI": ["Futur I", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "futurIi": ["Futur II", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "werden abgeknickt haben / sein⁽¹⁾"]
+      },
+      "konjunktivIi": {
+        "prasens": ["Prasens", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "prateritum": ["Präteritum", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "perfekt": ["Perfekt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt", "habe / bin⁽¹⁾ abgeknickt"],
+        "plusquamperfekt": ["Prasens", "hattest / warst⁽¹⁾ abgeknickt", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "futurI": ["Futur I", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab"],
+        "futurIi": ["Futur II", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "knicke ab", "werden abgeknickt haben / sein⁽¹⁾"]
+      },
+      "imperativ": {
+        "title": "Konjugation: Imperativ",
+        "sidebar": ["2. Person Singular [du]", "2. Person Plural [ihr]  "],
+        "content": ["knick ab!; knicke ab!", "knickt ab!"]
+      },
+      "infinitiv": {
+        "title": "Deklination: Steigerungsformen / Konjugation: Infinite Formen",
+        "infinitiv": ["Infinitiv mit zu", "abzuknicken"],
+        "partizipI": ["Partizip I", "abknickend"],
+        "partizipIi": ["Partizip II", "abgeknickt"],
+        "hint": "⁽2⁾ Perfektbildung mit \"hat\", andere mit \"ist\""
+      }
+    },
+    "test2": {}
   }
 }
