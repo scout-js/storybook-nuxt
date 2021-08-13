@@ -1,6 +1,6 @@
 <template>
   <section data-block-type="grammar">
-    <h2>Grammatik</h2>
+    <h2 id="grammatik">Grammatik</h2>
     <div id="accordion">
       <DeclinationNounTables />
     </div>

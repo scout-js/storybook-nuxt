@@ -1,13 +1,13 @@
 <template>
   <section data-block-type="grammar">
-    <h2>Grammatik</h2>
+    <h2 id="grammatik">Grammatik</h2>
     <div id="accordion">
       <!-- Steigerungsformen -->
       <InfiniteSteigerungsformenTables />
 
       <!--   Starke Beugung (ohne Artikel)   -->
       <div class="con-dec__wrapper declination combined-groups">
-        <h3 class="accordion-tables__header">{{ 'Starke Beugung (ohne Artikel)' }}</h3>
+        <h3 id=starke-beugung" class="accordion-tables__header">{{ 'Starke Beugung (ohne Artikel)' }}</h3>
         <div class="accordion-content">
           <div class="accordion-groups">
             <div class="accordion-tables__group">
@@ -27,7 +27,7 @@
 
       <!--   Schwache Beugung (mit Artikel)   -->
       <div class="con-dec__wrapper declination combined-groups">
-        <h3 class="accordion-tables__header">{{ 'Schwache Beugung (mit Artikel)' }}</h3>
+        <h3 id="schwache-beugung" class="accordion-tables__header">{{ 'Schwache Beugung (mit Artikel)' }}</h3>
         <div class="accordion-content">
           <div class="accordion-groups">
             <div class="accordion-tables__group">
@@ -47,7 +47,7 @@
 
       <!--   Gemischte Beugung (mit ein, kein, Possessivpronomen u.a.)   -->
       <div class="con-dec__wrapper declination combined-groups">
-        <h3 class="accordion-tables__header">{{ 'Gemischte Beugung (mit ein, kein, Possessivpronomen u.a.)' }}</h3>
+        <h3 id="gemischte-beugung" class="accordion-tables__header">{{ 'Gemischte Beugung (mit ein, kein, Possessivpronomen u.a.)' }}</h3>
         <div class="accordion-content">
           <div class="accordion-groups">
             <div class="accordion-tables__group">

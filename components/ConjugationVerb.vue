@@ -1,10 +1,10 @@
 <template>
   <section data-block-type="grammar">
-    <h2>Grammatik</h2>
+    <h2 id="grammatik">Grammatik</h2>
     <div id="accordion">
       <!-- Indicativ -->
       <div class="con-dec__wrapper conjugation independent-groups">
-        <h3 class="accordion-tables__header">{{ 'Indicativ' }}</h3>
+        <h3 id="indicativ" class="accordion-tables__header">{{ 'Indicativ' }}</h3>
         <div class="accordion-groups">
           <div class="accordion-group">
             <div class="accordion-tables__group">
@@ -40,7 +40,7 @@
 
       <!-- Konjunktiv I -->
       <div class="con-dec__wrapper conjugation independent-groups">
-        <h3 class="accordion-tables__header">{{ 'Konjunktiv I' }}</h3>
+        <h3 id="konjunktiv-i" class="accordion-tables__header">{{ 'Konjunktiv I' }}</h3>
         <div class="accordion-groups">
           <div class="accordion-group">
             <div class="accordion-tables__group">
@@ -66,7 +66,7 @@
 
       <!-- Konjunktiv II -->
       <div class="con-dec__wrapper conjugation independent-groups">
-        <h3 class="accordion-tables__header">{{ 'Konjunktiv II' }}</h3>
+        <h3 id="konjunktiv-ii" class="accordion-tables__header">{{ 'Konjunktiv II' }}</h3>
         <div class="accordion-groups">
           <div class="accordion-group">
             <div class="accordion-tables__group">
