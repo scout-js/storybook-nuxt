@@ -1,6 +1,6 @@
 <template>
   <div class="con-dec__wrapper declination single-group">
-    <h3 id="declination-noun" class="accordion-tables__header">{{ declination.noun.title }}</h3>
+    <h3 id="declination-noun" class="accordion-tables__header">{{ title }}</h3>
     <div class="accordion-content">
       <div class="accordion-groups">
         <div class="accordion-tables__group">
@@ -22,6 +22,12 @@
   export default {
     name: 'DeklinationNounTables',
     components: { Table },
+    props: {
+      title: {
+        type: String,
+        default: 'Deklination: Noun',
+      },
+    },
     data() {
       return {
         declination,

@@ -1,6 +1,6 @@
 <template>
   <div class="con-dec__wrapper declination combined-groups">
-    <h3 class="accordion-tables__header">{{ declination.title }}</h3>
+    <h3 class="accordion-tables__header">{{ title }}</h3>
     <div class="accordion-content">
       <div class="accordion-groups">
         <div class="accordion-tables__group">
@@ -26,6 +26,12 @@
   export default {
     name: 'DeklinationTables',
     components: { Table },
+    props: {
+      title: {
+        type: String,
+        default: 'Deklination',
+      },
+    },
     data() {
       return {
         declination,

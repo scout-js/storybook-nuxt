@@ -1,6 +1,6 @@
 <template>
   <div class="con-dec__wrapper conjugation independent-groups imperativ">
-    <h3 id="imperativ" class="accordion-tables__header">{{ conjugation.imperativ.title }}</h3>
+    <h3 id="imperativ" class="accordion-tables__header">{{ title }}</h3>
     <div class="accordion-groups">
       <div class="accordion-group">
         <div class="accordion-tables__group">
@@ -21,6 +21,12 @@
   export default {
     name: 'KonjugationImperativTables',
     components: { Table },
+    props: {
+      title: {
+        type: String,
+        default: 'Konjugation: Imperativ',
+      },
+    },
     data() {
       return {
         conjugation,

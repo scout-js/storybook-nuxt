@@ -1,6 +1,6 @@
 <template>
   <div class="con-dec__wrapper conjugation independent-groups">
-    <h3 class="accordion-tables__header">{{ conjugation.title }}</h3>
+    <h3 class="accordion-tables__header">{{ title }}</h3>
     <div class="accordion-groups">
       <div class="accordion-group">
         <div class="accordion-tables__group">
@@ -42,6 +42,12 @@
   export default {
     name: 'KonjugationTables',
     components: { Table },
+    props: {
+      title: {
+        type: String,
+        default: 'Konjugation',
+      },
+    },
     data() {
       return {
         conjugation,

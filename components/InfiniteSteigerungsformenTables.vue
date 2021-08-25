@@ -1,6 +1,6 @@
 <template>
   <div class="con-dec__wrapper declination combined-groups odd">
-    <h3 id="infinitiv" class="accordion-tables__header">{{ infinite.title }}</h3>
+    <h3 id="infinitiv" class="accordion-tables__header">{{ title }}</h3>
     <div class="accordion-content">
       <div class="accordion-groups">
         <div class="accordion-tables__group">
@@ -33,6 +33,12 @@
   export default {
     name: 'InfiniteSteigerungsformenTables',
     components: { ContentPart },
+    props: {
+      title: {
+        type: String,
+        default: 'Infinite Steigerungsformen',
+      },
+    },
     data() {
       return {
         infinite,
