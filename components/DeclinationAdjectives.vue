@@ -7,7 +7,7 @@
 
       <!--   Starke Beugung (ohne Artikel)   -->
       <div class="con-dec__wrapper declination combined-groups">
-        <h3 id=starke-beugung" class="accordion-tables__header">{{ 'Starke Beugung (ohne Artikel)' }}</h3>
+        <h3 id="starke-beugung" class="accordion-tables__header">{{ 'Starke Beugung (ohne Artikel)' }}</h3>
         <div class="accordion-content">
           <div class="accordion-groups">
             <div class="accordion-tables__group">
