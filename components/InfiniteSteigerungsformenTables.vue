@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="accordion-hints__group">
-        <div class="accordion__item__hint"><sup>(1)</sup> {{ conjugation.hint }}</div>
+        <div class="accordion__item__hint"><sup>(1)</sup> {{ infinite.hint }}</div>
       </div>
     </div>
   </div>
