@@ -73,7 +73,7 @@ import { declination } from '~/static/data.json'
 import Table from '~/components/Table'
 
 export default {
-  name: 'DeklinationAdjectives',
+  name: 'DeclinationAdjectives',
   components: { Table },
   data() {
     return {

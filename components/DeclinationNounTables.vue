@@ -20,7 +20,7 @@
   import Table from '~/components/Table'
 
   export default {
-    name: 'DeklinationNounTables',
+    name: 'DeclinationNounTables',
     components: { Table },
     props: {
       title: {

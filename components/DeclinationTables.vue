@@ -24,7 +24,7 @@
   import Table from '~/components/Table'
 
   export default {
-    name: 'DeklinationTables',
+    name: 'DeclinationTables',
     components: { Table },
     props: {
       title: {

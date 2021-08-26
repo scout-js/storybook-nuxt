@@ -19,7 +19,7 @@
   import Table from '~/components/Table'
 
   export default {
-    name: 'KonjugationImperativTables',
+    name: 'ConjugationImperativTables',
     components: { Table },
     props: {
       id: {
