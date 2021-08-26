@@ -2,79 +2,29 @@
   <section data-block-type="grammar">
     <h2 id="grammatik">Grammatik</h2>
     <div id="accordion">
-      <!-- Steigerungsformen -->
-      <InfiniteSteigerungsformenTables />
+      <!--   Steigerungsformen   -->
+      <InfiniteSteigerungsformenTables id="steigerungsformen" title="Steigerungsformen" />
 
       <!--   Starke Beugung (ohne Artikel)   -->
-      <div class="con-dec__wrapper declination combined-groups">
-        <h3 id="starke-beugung" class="accordion-tables__header">{{ 'Starke Beugung (ohne Artikel)' }}</h3>
-        <div class="accordion-content">
-          <div class="accordion-groups">
-            <div class="accordion-tables__group">
-              <Table :sidebar="declination.sidebar" :items="declination.maskulin" />
-              <Table :sidebar="declination.sidebar" :items="declination.femininum" />
-            </div>
-            <div class="accordion-tables__group">
-              <Table :sidebar="declination.sidebar" :items="declination.neutrum" />
-              <Table :sidebar="declination.sidebar" :items="declination.plural" />
-            </div>
-          </div>
-          <div class="accordion-hints__group">
-            <div class="accordion__item__hint">{{ declination.hint }}</div>
-          </div>
-        </div>
-      </div>
+      <DeclinationTables id="starke-beugung" title="Starke Beugung (ohne Artikel)" />
 
       <!--   Schwache Beugung (mit Artikel)   -->
-      <div class="con-dec__wrapper declination combined-groups">
-        <h3 id="schwache-beugung" class="accordion-tables__header">{{ 'Schwache Beugung (mit Artikel)' }}</h3>
-        <div class="accordion-content">
-          <div class="accordion-groups">
-            <div class="accordion-tables__group">
-              <Table :sidebar="declination.sidebar" :items="declination.maskulin" />
-              <Table :sidebar="declination.sidebar" :items="declination.femininum" />
-            </div>
-            <div class="accordion-tables__group">
-              <Table :sidebar="declination.sidebar" :items="declination.neutrum" />
-              <Table :sidebar="declination.sidebar" :items="declination.plural" />
-            </div>
-          </div>
-          <div class="accordion-hints__group">
-            <div class="accordion__item__hint">{{ declination.hint }}</div>
-          </div>
-        </div>
-      </div>
+      <DeclinationTables id="schwache-beugung" title="Schwache Beugung (mit Artikel)" />
 
       <!--   Gemischte Beugung (mit ein, kein, Possessivpronomen u.a.)   -->
-      <div class="con-dec__wrapper declination combined-groups">
-        <h3 id="gemischte-beugung" class="accordion-tables__header">{{ 'Gemischte Beugung (mit ein, kein, Possessivpronomen u.a.)' }}</h3>
-        <div class="accordion-content">
-          <div class="accordion-groups">
-            <div class="accordion-tables__group">
-              <Table :sidebar="declination.sidebar" :items="declination.maskulin" />
-              <Table :sidebar="declination.sidebar" :items="declination.femininum" />
-            </div>
-            <div class="accordion-tables__group">
-              <Table :sidebar="declination.sidebar" :items="declination.neutrum" />
-              <Table :sidebar="declination.sidebar" :items="declination.plural" />
-            </div>
-          </div>
-          <div class="accordion-hints__group">
-            <div class="accordion__item__hint">{{ declination.hint }}</div>
-          </div>
-        </div>
-      </div>
+      <DeclinationTables id="gemischte-beugung" title="Gemischte Beugung (mit ein, kein, Possessivpronomen u.a.)" />
     </div>
   </section>
 </template>
 
 <script>
 import { declination } from '~/static/data.json'
-import Table from '~/components/Table'
+import InfiniteSteigerungsformenTables from '~/components/TablesInfiniteSteigerungsformen'
+import DeclinationTables from '~/components/DeclinationTables'
 
 export default {
   name: 'DeclinationAdjectives',
-  components: { Table },
+  components: { InfiniteSteigerungsformenTables, DeclinationTables },
   data() {
     return {
       declination,
