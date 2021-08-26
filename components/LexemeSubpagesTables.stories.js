@@ -9,7 +9,7 @@ export const TableConjugation = () => ({
 })
 
 export const TableDeclination = () => ({
-  template:  '<DeclinationTables />',
+  template:  '<DeclinationTables id="declination" title="Declination" />',
 })
 
 export const TableConjugationImperativ = () => ({
@@ -17,7 +17,7 @@ export const TableConjugationImperativ = () => ({
 })
 
 export const TableDeclinationNoun = () => ({
-  template:  '<DeclinationNounTables />',
+  template:  '<DeclinationNounTables id="declination-noun" title="Declination: Noun" />',
 })
 
 export const TableInfiniteSteigerungsformen = () => ({
