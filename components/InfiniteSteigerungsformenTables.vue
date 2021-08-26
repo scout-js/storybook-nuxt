@@ -1,6 +1,6 @@
 <template>
   <div class="con-dec__wrapper declination combined-groups odd">
-    <h3 id="infinitiv" class="accordion-tables__header">{{ title }}</h3>
+    <h3 v-if="id && title" :id="id" class="accordion-tables__header">{{ title }}</h3>
     <div class="accordion-content">
       <div class="accordion-groups">
         <div class="accordion-tables__group">
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="accordion-hints__group">
-        <div class="accordion__item__hint">{{ infinite.hint }}</div>
+        <div class="accordion__item__hint"><sup>(1)</sup> {{ conjugation.hint }}</div>
       </div>
     </div>
   </div>
@@ -34,9 +34,13 @@
     name: 'InfiniteSteigerungsformenTables',
     components: { ContentPart },
     props: {
+      id: {
+        type: String,
+        required: true,
+      },
       title: {
         type: String,
-        default: 'Infinite Steigerungsformen',
+        required: true,
       },
     },
     data() {
