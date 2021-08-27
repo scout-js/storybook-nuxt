@@ -58,7 +58,6 @@
   .accordion__list {
     &.sidebar-column {
       border-right: 1px solid $ink-brightest;
-      font-weight: bold;
 
       &.dashed {
         border-right: 1px dashed $ink-brightest;
@@ -75,7 +74,6 @@
     color: $ink;
     border-bottom: 1px solid $ink-brightest;
     font-size: 15px;
-    font-style: normal;
     font-stretch: normal;
     line-height: 40px;
 
@@ -110,12 +108,25 @@
 
   &.conjugation {
     &.independent-groups {
+      .accordion-groups {
+        .accordion-group {
+          margin-top: 40px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
       .accordion-table {
         display: grid;
         grid-template-columns: 100px auto;
       }
 
       .accordion__list {
+        &.sidebar-column {
+          font-style: italic;
+        }
+
         &.content-column {
           .accordion__item {
             &:first-child {
@@ -165,6 +176,14 @@
             }
           }
         }
+      }
+    }
+  }
+
+  &.declination {
+    .accordion__list {
+      &.sidebar-column {
+        font-weight: 700;
       }
     }
   }
