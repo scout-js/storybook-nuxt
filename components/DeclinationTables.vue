@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="accordion-hints__group">
-        <div class="accordion__item__hint">{{ declination.hint }}</div>
+        <div class="accordion__item__hint"><sup>(1)</sup> <span>{{ declination.hint }}</span></div>
       </div>
     </div>
   </div>

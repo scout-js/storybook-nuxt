@@ -19,7 +19,7 @@
 
 <script>
 import { declination } from '~/static/data.json'
-import InfiniteSteigerungsformenTables from '~/components/TablesInfiniteSteigerungsformen'
+import InfiniteSteigerungsformenTables from '~/components/InfiniteSteigerungsformenTables'
 import DeclinationTables from '~/components/DeclinationTables'
 
 export default {

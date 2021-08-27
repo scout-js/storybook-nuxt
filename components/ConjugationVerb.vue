@@ -1,6 +1,7 @@
 <template>
   <section data-block-type="grammar">
     <h2 id="grammatik">Grammatik</h2>
+    <p>Perfektbildung mit „hat“; meist im Infinitiv <i>und</i> im 2.&nbsp;Partizip</p>
     <div id="accordion">
       <!-- Indicativ -->
       <ConjugationTables id="indicativ" title="Indicativ" />
