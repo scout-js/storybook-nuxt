@@ -1,13 +1,13 @@
 <template>
   <div class="con-dec__wrapper conjugation independent-groups imperativ">
-    <h3 id="imperativ" class="accordion-tables__header">{{ conjugation.imperativ.title }}</h3>
+    <h3 v-if="id && title" :id="id" class="accordion-tables__header">{{ title }}</h3>
     <div class="accordion-groups">
       <div class="accordion-group">
         <div class="accordion-tables__group">
           <Table :sidebar="conjugation.imperativ.sidebar" :items="conjugation.imperativ.content" />
         </div>
         <div class="accordion-hints__group">
-          <div class="accordion__item__hint">{{ conjugation.hint }}</div>
+          <div class="accordion__item__hint"><sup>(1)</sup> <span>{{ conjugation.hint }}</span></div>
         </div>
       </div>
     </div>
@@ -19,8 +19,18 @@
   import Table from '~/components/Table'
 
   export default {
-    name: 'KonjugationImperativTables',
+    name: 'ConjugationImperativTables',
     components: { Table },
+    props: {
+      id: {
+        type: String,
+        required: true,
+      },
+      title: {
+        type: String,
+        required: true,
+      },
+    },
     data() {
       return {
         conjugation,

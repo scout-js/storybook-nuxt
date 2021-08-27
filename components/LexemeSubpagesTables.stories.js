@@ -5,21 +5,21 @@ export default {
 }
 
 export const TableConjugation = () => ({
-  template:  '<ConjugationTables />',
+  template:  '<ConjugationTables id="konjugation" title="Konjugation" />',
 })
 
 export const TableDeclination = () => ({
-  template:  '<DeclinationTables />',
+  template:  '<DeclinationTables id="declination" title="Declination" />',
 })
 
 export const TableConjugationImperativ = () => ({
-  template:  '<ConjugationImperativTables />',
+  template:  '<ConjugationImperativTables id="imperativ" title="Konjugation: Imperativ" />',
 })
 
 export const TableDeclinationNoun = () => ({
-  template:  '<DeclinationNounTables />',
+  template:  '<DeclinationNounTables id="declination-noun" title="Declination: Noun" />',
 })
 
 export const TableInfiniteSteigerungsformen = () => ({
-  template:  '<InfiniteSteigerungsformenTables />',
+  template:  '<InfiniteSteigerungsformenTables id="infinite" title="Konjugation: Infinite / Deklination: Steigerungsformen" />',
 })

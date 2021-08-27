@@ -1,19 +1,19 @@
 <template>
   <section data-block-type="grammar">
-    <h2 id="grammatik">Grammatik</h2>
+    <h2 id="grammatik">{{ 'Grammatik' }}</h2>
     <div id="accordion">
-      <DeclinationNounTables />
+      <DeclinationNounTables id="deklination" title="Deklination" />
     </div>
   </section>
 </template>
 
 <script>
 import { declination } from '~/static/data.json'
-import Table from '~/components/Table'
+import DeclinationNounTables from '~/components/DeclinationNounTables'
 
 export default {
-  name: 'DeklinationNouns',
-  components: { Table },
+  name: 'DeclinationNouns',
+  components: { DeclinationNounTables },
   data() {
     return {
       declination,

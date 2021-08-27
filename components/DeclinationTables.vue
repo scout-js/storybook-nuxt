@@ -1,6 +1,6 @@
 <template>
   <div class="con-dec__wrapper declination combined-groups">
-    <h3 class="accordion-tables__header">{{ declination.title }}</h3>
+    <h3 v-if="id && title" :id="id" class="accordion-tables__header">{{ title }}</h3>
     <div class="accordion-content">
       <div class="accordion-groups">
         <div class="accordion-tables__group">
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="accordion-hints__group">
-        <div class="accordion__item__hint">{{ declination.hint }}</div>
+        <div class="accordion__item__hint"><sup>(1)</sup> <span>{{ declination.hint }}</span></div>
       </div>
     </div>
   </div>
@@ -24,8 +24,18 @@
   import Table from '~/components/Table'
 
   export default {
-    name: 'DeklinationTables',
+    name: 'DeclinationTables',
     components: { Table },
+    props: {
+      id: {
+        type: String,
+        required: true,
+      },
+      title: {
+        type: String,
+        required: true,
+      },
+    },
     data() {
       return {
         declination,
