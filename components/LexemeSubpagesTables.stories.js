@@ -20,6 +20,10 @@ export const TableDeclinationNoun = () => ({
   template:  '<DeclinationNounTables id="declination-noun" title="Declination: Noun" />',
 })
 
+export const TableDeclinationNounSingle = () => ({
+  template:  '<DeclinationNounSingleTables id="declination-noun-single" title="Declination: Noun Single" />',
+})
+
 export const TableInfiniteSteigerungsformen = () => ({
   template:  '<InfiniteSteigerungsformenTables id="infinite" title="Konjugation: Infinite / Deklination: Steigerungsformen" />',
 })

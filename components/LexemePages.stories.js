@@ -15,3 +15,7 @@ export const PageDeklinationAdjectives = () => ({
 export const PageDeclinationNouns = () => ({
   template:  '<DeclinationNouns />',
 })
+
+export const PageDeclinationNounsSingle = () => ({
+  template:  '<DeclinationNounsSingle />',
+})
